@@ -1,15 +1,46 @@
 body{
-    background-color: rgb(148 163 184); 
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
 }
 
 .container {
     display: flex;
     align-items: center;
 }
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    margin-left: 80px; /* Espacio a la izquierda */
+}
 img {
     border-radius: 50%; /* Esto hace que la imagen sea redonda */
     max-width: 250px; /* Ancho máximo de la imagen */
     max-height: 250px; /* Alto máximo de la imagen */
+}
+/* Estilo del header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7ca6b9; /* Color de fondo del header */
+    padding: 10px 0;
+}
+
+#titulo {
+    margin: 0 20px; /* Margen para separar el título del borde del header */
+    color: #fff; /* Color del texto */
+}
+
+
+.sobre-mi{
+    margin-top: 50px;
 }
 
 
@@ -17,4 +48,54 @@ img {
     border: 0;
     height: 2px;
     background-color: #000; /* Color de fondo del hr */
+}
+
+
+
+/* Animación de desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+/* Navegacion */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li:first-child {
+    margin-left: 25px; /* Quita el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+}
+
+
+main{
+    margin-top: 130px;
+}
+
+footer {
+    text-align: center;
+    max-width: 600px; /* Ancho máximo del footer */
+    margin: 0 auto; /* Centra el footer horizontalmente */
+    margin-block: 50px;
+    padding: 20px;
+    border: 2px solid #000000; /* Añade un borde de 2 píxeles de grosor y color gris claro */
+    border-radius: 30px; /* Redondea las esquinas del footer */
+}
+
+footer p {
+    margin-bottom: 15px; /* Espacio entre el texto y el enlace */
+}
+
+footer a {
+    margin: 0 15px; /* Espacio entre los enlaces */
 }
