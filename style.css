@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(148 163 184); 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+img {
+    border-radius: 50%; /* Esto hace que la imagen sea redonda */
+    max-width: 250px; /* Ancho máximo de la imagen */
+    max-height: 250px; /* Alto máximo de la imagen */
+}
+
+
+.mi-hr {
+    border: 0;
+    height: 2px;
+    background-color: #000; /* Color de fondo del hr */
+}
